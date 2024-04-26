@@ -56,11 +56,6 @@ public class Employee {
     }
 
     @Override
-    public String toString() {
-        return "Id Сотрудника: " + getId() + " ФИО сотрудника - " + getName() + " отдел - " + getDepartment() + " заработная плата сотрудника - " + getSalary() + " рублей.";
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -71,5 +66,12 @@ public class Employee {
     @Override
     public int hashCode() {
         return Objects.hash(name, id);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                '}';
     }
 }
