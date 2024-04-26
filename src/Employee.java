@@ -2,14 +2,15 @@ import java.util.Objects;
 
 public class Employee {
     private static int generator = 1;
+    public int getDepartment;
 
     private String name;
-    private String department;
+    private int department;
     private double salary;
     private int id;
 
 
-    public Employee(String name, String department, double salary) {
+    public Employee(String name, int department, double salary) {
         this.name = name;
         this.department = department;
         this.salary = salary;
@@ -22,11 +23,11 @@ public class Employee {
     }
 
 
-    public String getDepartment() {
+    public int getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(int department) {
         this.department = department;
     }
 
