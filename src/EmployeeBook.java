@@ -65,6 +65,9 @@ public class EmployeeBook {
 
     public void changeSalaryByPercent(int percent) {
         for (Employee employee : employees) {
+            if (employee == null) {
+                continue;
+            }
             double newSalary = employee.getSalary() + employee.getSalary() / 100.0 * percent;
             employee.setSalary(newSalary);
         }

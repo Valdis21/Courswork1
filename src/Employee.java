@@ -27,9 +27,6 @@ public class Employee {
         return department;
     }
 
-    public void setDepartment(int department) {
-        this.department = department;
-    }
 
     public double getSalary() {
         return salary;
